@@ -1,0 +1,33 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+<title>Контакты</title>
+{% endblock %}
+    
+{% block content %}
+<div class="main">
+	<h1>Контакты</h1>
+	<p><strong>Телефон</strong>: +7 (495) 483-54-92</p>
+	<p><strong>E-mail</strong>: admin@mail.ru</p>
+
+	<p><strong>Наш офис расположен по адресу</strong>:</p>
+	<p>ул. Солянский проезд, д. 12</p>
+
+	<p><strong>Режим работы</strong>:
+	<p>пн-пт: 10:00 до 19:00</p>
+	<p>сб-вс: выходные.</p>
+
+	<h2>Схема проезда</h2>
+	<div>
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A197a5e7ab0b1ca810cafa90076ab3fae833e28ca72acc80f9e965d0ca3173ee9&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+	</div>
+</div>
+<div class="slidebar">
+	<h2>Форма для связи</h2>
+	<form action="" method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="Отправить" />
+	</form>
+</div>
+{% endblock %}

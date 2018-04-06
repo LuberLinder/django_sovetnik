@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{% load static from staticfiles %}
+
+{% block script %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/slider.css' %}">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="{% static 'main/js/slider.js' %}"></script>
+{% endblock %}
+
+{% block title %}
+<title>Галерея</title>
+{% endblock %}
+    
+{% block content %}
+<h1>Галерея</h1>
+<div id="slider">
+  <span class="control_next"></span>
+  <span class="control_prev"></span>
+  <ul>
+    <li><img src="{% static 'main/img/galary/image1.jpg' %}" alt="Фото 1" title=""></li>
+    <li><img src="{% static 'main/img/galary/image2.jpg' %}" alt="Фото 2" title=""></li>
+    <li><img src="{% static 'main/img/galary/image3.jpg' %}" alt="Фото 3" title=""></li>
+  </ul>  
+</div>
+{% endblock %}

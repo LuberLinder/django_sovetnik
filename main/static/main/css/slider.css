@@ -1,0 +1,52 @@
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 894px;
+  height: 500px;
+  text-align: center;
+  line-height: 500px;
+}
+
+span.control_prev, span.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4%;
+  width: auto;
+  height: auto;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+span.control_prev:hover, span.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+span.control_prev {
+  background: url('../img/btn-previous.png') center no-repeat;
+}
+
+span.control_next {
+  right: 0;
+  background: url('../img/btn-next.png') center no-repeat;
+}

@@ -1,0 +1,120 @@
+body {
+	font-size: 14px;
+	color: #333;
+	background: url('../img/white-brick.png') repeat;
+	margin: 0;
+}
+h3 {
+	color: #696969;
+	font-size: 18px;
+}
+p {
+	font-family: jura;
+}
+#header {
+	background: url('../img/cap-min.png') repeat
+}
+#header > div {
+	width: 894px;
+	margin: auto;
+	overflow: hidden;
+	display: table;
+}
+#header .logo {
+	width: 275px;
+	float: left;
+	margin: 20px 0;
+}
+#header div img {
+	float: left;
+}
+#header li {
+	display: block;
+	float: left;
+}
+#header ul {
+    list-style-type: none;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: table-cell;
+	vertical-align: bottom;
+}
+#header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#header li a:hover {
+    #background-color: #333;
+    outline: 1px solid #ccc;
+}
+#header .active {
+    background-color: red;
+}
+#content {
+	width: 894px;
+	margin: 10px auto;
+	overflow: auto;
+	min-height: 400px;
+}
+#footer {
+	background-color: #242828;
+	width: 100%;
+}
+#footer div {
+	text-align: right;
+	padding: 24px;
+}
+#footer p {
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0;
+}
+.main {
+	width: 66%;
+	float: left;
+}
+.slidebar {
+	width: 33%;
+	float: right;
+	text-align: center;
+}
+.slidebar blockquote {
+	margin: 0;
+	text-align: justify;
+	font-size: 0.9em;
+	padding: 0 20px;
+	font-style: italic;
+}
+.news-item {
+	overflow: auto;
+}
+.photo {
+	float: left;
+}
+.content {
+	width: 45%;
+	float: right;
+}
+.content ol {
+	padding-left: 15px;
+}
+form {
+	border: 1px solid #ccc;
+	padding: 0 20px;
+}
+form label {
+	display: block;
+	padding: 5px 0;
+	font-weight: 700;
+}
+form input[type="submit"] {
+	margin-bottom: 15px;
+}
+form #id_phone, form #id_name {
+	width: 90%;
+}
