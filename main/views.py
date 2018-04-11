@@ -28,12 +28,12 @@ def contacts(request):
 		# check whether it's valid:
 		if form.is_valid():
 			subject = 'Order'
-			sender = 'postmaster@sandboxad111d92908b44858be03c3657c9d065.mailgun.org'
+			sender = 'form@sovetnik.app'
 			name = form.cleaned_data['name']
 			phone = form.cleaned_data['phone']
 
 			message = ' Name: ' + str(name) + ' Phone: ' + str(phone)
-			recipients = ['marko.vasiljevic@yandex.ru']
+			recipients = ['luberlinder@gmail.com']
 
 			send_mail(subject, message, sender, recipients)
 

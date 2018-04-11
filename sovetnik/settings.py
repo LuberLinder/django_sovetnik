@@ -124,11 +124,17 @@ STATIC_URL = '/static/'
 #EMAIL_PORT = 25
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+'''
 EMAIL_HOST = 'smtp.mailgun.org' # os.environ.get('MAILGUN_SMTP_SERVER')
 EMAIL_PORT = 587				# os.environ.get('MAILGUN_SMTP_PORT')
 EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN')
 EMAIL_HOST_PASSWORD = os.environ.get('MAILGUN_SMTP_PASSWORD')
-#EMAIL_USE_TLS = True
+'''
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
