@@ -28,7 +28,7 @@ def contacts(request):
 		# check whether it's valid:
 		if form.is_valid():
 			subject = 'Order'
-			sender = 'my@mail.com'
+			sender = 'luberlinder@gmail.com'
 			name = form.cleaned_data['name']
 			phone = form.cleaned_data['phone']
 
