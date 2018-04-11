@@ -128,7 +128,7 @@ EMAIL_HOST = 'smtp.mailgun.org' # os.environ.get('MAILGUN_SMTP_SERVER')
 EMAIL_PORT = 587				# os.environ.get('MAILGUN_SMTP_PORT')
 EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN')
 EMAIL_HOST_PASSWORD = os.environ.get('MAILGUN_SMTP_PASSWORD')
-EMAIL_USE_TLS = True
+#EMAIL_USE_TLS = True
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url

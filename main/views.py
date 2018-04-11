@@ -33,7 +33,7 @@ def contacts(request):
 			phone = form.cleaned_data['phone']
 
 			message = ' Name: ' + str(name) + ' Phone: ' + str(phone)
-			recipients = ['postmaster@sandboxad111d92908b44858be03c3657c9d065.mailgun.org']
+			recipients = ['marko.vasiljevic@yandex.ru']
 
 			send_mail(subject, message, sender, recipients)
 
